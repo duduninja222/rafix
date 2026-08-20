@@ -1,0 +1,26 @@
+body {
+    background-color: #e8f5e9;
+}
+
+h1 {
+    color: blue;
+}
+
+p {
+    color: #444444;
+}
+
+.destaque {
+    color: red;
+}
+
+#principal {
+    background-color: lightblue;
+    padding: 20px;
+}
+
+.cores {
+    background-color: #f0f0f0;
+    color: rgb(0, 128, 0);
+    padding: 20px;
+}
