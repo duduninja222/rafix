@@ -1,0 +1,25 @@
+.quadrado {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    border: 2px solid rgb(231, 10, 10);
+}
+
+.caixa {
+    background-color: rgb(109, 86, 86);
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.margem {
+    margin-top: 30px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    background-color: blue;
+    color: white;
+}

@@ -1,17 +1,17 @@
 body {
-    background-color: #e8f5e9;
+    background-color: #1bdd45;
 }
 
 h1 {
-    color: blue;
+    color: rgb(17, 17, 206);
 }
 
 p {
-    color: #444444;
+    color: #d31fb5;
 }
 
 .destaque {
-    color: red;
+    color: rgb(22, 204, 218);
 }
 
 #principal {

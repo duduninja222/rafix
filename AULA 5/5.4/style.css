@@ -1,0 +1,66 @@
+.lista {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lista li {
+    margin: 5px;
+}
+
+.botao {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.botao:hover {
+    background-color: green;
+}
+
+.imagem {
+    width: 300px;
+    opacity: 0.5;
+}
+
+.sombra {
+    text-shadow: 2px 2px 4px gray;
+}
+
+.cartao {
+    width: 300px;
+    padding: 25px;
+    margin-top: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px gray;
+}
+
+.cartao img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.cartao h2 {
+    font-weight: bold;
+}
+
+.cartao p {
+    text-align: center;
+}
+
+.cartao a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cartao a:hover {
+    background-color: green;
+}
