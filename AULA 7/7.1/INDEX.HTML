@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>C&M Store</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="syle2.php">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+
+        <div class="logo">
+            <h1>C&M</h1>
+            <span>STORE</span>
+        </div>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#carrinho">Carrinho</a>
+            <a href="#perfil">Perfil</a>
+        </nav>
+
+        <button class="menu-mobile" onclick="abrirMenu()">☰</button>
+
+    </header>
+
+
+    <!-- INÍCIO -->
+    <section id="inicio" class="inicio">
+
+        <div class="inicio-texto">
+
+            <span class="pequeno">C&M STORE</span>
+
+            <h2>
+                Moda feminina e infantil
+                em um só lugar.
+            </h2>
+
+            <p>
+                Encontre roupas e acessórios para todos os momentos.
+                Navegue pelo catálogo, escolha seus produtos e monte
+                seu carrinho de compras.
+            </p>
+
+            <a href="#produtos" class="botao">
+                Comprar agora
+            </a>
+
+        </div>
+
+
+        <div class="promocao">
+
+            <span>OFERTA DA SEMANA</span>
+
+            <h3>Até 15% OFF</h3>
+
+            <button onclick="cupom()">
+                Aplicar cupom
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="produtos">
+
+        <div class="titulo">
+
+            <div>
+                <span class="pequeno">CATÁLOGO</span>
+
+                <h2>Todos os produtos</h2>
+            </div>
+
+
+            <div class="busca">
+
+                <input
+                    type="text"
+                    id="pesquisa"
+                    placeholder="Buscar produto..."
+                    onkeyup="buscarProduto()"
+                >
+
+                <button onclick="buscarProduto()">
+                    🔍
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- FILTROS -->
+
+        <div class="filtros">
+
+            <button onclick="filtrar('todos')">
+                Todos
+            </button>
+
+            <button onclick="filtrar('feminino')">
+                Feminino
+            </button>
+
+            <button onclick="filtrar('infantil')">
+                Infantil
+            </button>
+
+            <button onclick="filtrar('acessorios')">
+                Acessórios
+            </button>
+
+        </div>
+
+
+        <!-- LISTA DE PRODUTOS -->
+
+        <div class="lista-produtos" id="listaProdutos">
+
+
+            <div class="produto" data-categoria="feminino">
+
+                <div class="imagem-produto">
+                    <img src="./images (4).jpg" alt="Blusa feminina">
+                </div>
+
+                <div class="informacoes">
+
+                    <span>FEMININO</span>
+
+                    <h3>Blusa Casual</h3>
+
+                    <p class="preco">
+                        R$ 89,90
+                    </p>
+
+                    <button onclick="adicionarCarrinho('Blusa Casual', 89.90)">
+                        Adicionar
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="produto" data-categoria="feminino">
+
+                <div class="imagem-produto">
+                    <img src="./2828--2--ao1jim7z3a.webp" alt="Vestido feminino">
+                </div>
+
+                <div class="informacoes">
+
+                    <span>FEMININO</span>
+
+                    <h3>Vestido Floral</h3>
+
+                    <p class="preco">
+                        R$ 129,90
+                    </p>
+
+                    <button onclick="adicionarCarrinho('Vestido Floral', 129.90)">
+                        Adicionar
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="produto" data-categoria="feminino">
+
+                <div class="imagem-produto">
+                    <img src="./images (3).jpg" alt="Calça jeans">
+                </div>
+
+                <div class="informacoes">
+
+                    <span>MASCULINO</span>
+
+                    <h3>Calça Jeans</h3>
+
+                    <p class="preco">
+                        R$ 159,90
+                    </p>
+
+                    <button onclick="adicionarCarrinho('Calça Jeans', 159.90)">
+                        Adicionar
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="produto" data-categoria="infantil">
+
+                <div class="imagem-produto">
+                    <img src="../7.1/images (2).jpg" alt="Conjunto infantil">
+                </div>
+
+                <div class="informacoes">
+
+                    <span>MACULINO</span>
+
+                    <h3>Conjunto synah</h3>
+
+                    <p class="preco">
+                        R$ 799,90
+                    </p>
+
+                    <button onclick="adicionarCarrinho('Conjunto Infantil', 799.90)">
+                        Adicionar
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="produto" data-categoria="infantil">
+
+                <div class="imagem-produto">
+                    <img src="../7.1/images (1).jpg" alt="Tênis infantil">
+                </div>
+
+                <div class="informacoes">
+
+                    <span>MASCULINO</span>
+
+                    <h3>Air Jordan 5</h3>
+
+                    <p class="preco">
+                        R$ 1190,90
+                    </p>
+
+                    <button onclick="adicionarCarrinho('Tênis Infantil', 1190.90)">
+                        Adicionar
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="produto" data-categoria="acessorios">
+
+                <div class="imagem-produto">
+                    <img src="./0470.4BCF.037B.0001.webp" alt="Bolsa">
+                </div>
+
+                <div class="informacoes">
+
+                    <span>ACESSÓRIOS</span>
+
+                    <h3>Bolsa Mini</h3>
+
+                    <p class="preco">
+                        R$ 99,90
+                    </p>
+
+                    <button onclick="adicionarCarrinho('Bolsa Mini', 99.90)">
+                        Adicionar
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="produto" data-categoria="infantil">
+
+                <div class="imagem-produto">
+                    <img src="../7.1/images.jpg" alt="Camiseta Hell Star ">
+                </div>
+
+                <div class="informacoes">
+
+                    <span>MASCULINO</span>
+
+                    <h3>Camiseta Hell Star</h3>
+
+                    <p class="preco">
+                        R$ 299,90
+                    </p>
+
+                    <button onclick="adicionarCarrinho('Camiseta Infantil', 299.90)">
+                        Adicionar
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="produto" data-categoria="acessorios">
+
+                <div class="imagem-produto">
+                    <img src="./bandanda.jpg" alt="Lenço">
+                </div>
+
+                <div class="informacoes">
+
+                    <span>ACESSÓRIOS</span>
+
+                    <h3>Bandana Swag</h3>
+
+                    <p class="preco">
+                        R$ 39,90
+                    </p>
+
+                    <button onclick="adicionarCarrinho('Lenço Elegante', 39.90)">
+                        Adicionar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CARRINHO -->
+
+<section id="carrinho" class="carrinho">
+
+    <span class="pequeno">SEU PEDIDO</span>
+
+    <div class="titulo-carrinho">
+        <h2>Meu carrinho</h2>
+
+        <strong id="quantidadeCarrinho">
+            0 itens
+        </strong>
+    </div>
+
+
+    <!-- PRODUTOS DO CARRINHO -->
+
+    <div id="itensCarrinho">
+
+        <div class="carrinho-vazio">
+
+            <h3>Seu carrinho está vazio</h3>
+
+            <p>
+                Adicione produtos para começar sua compra.
+            </p>
+
+            <a href="#produtos" class="botao">
+                Ver produtos
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- RESUMO DA COMPRA -->
+
+    <div class="resumo">
+
+        <h3>Resumo da compra</h3>
+
+        <div class="linha-resumo">
+            <span>Subtotal</span>
+            <strong id="subtotal">
+                R$ 0,00
+            </strong>
+        </div>
+
+        <div class="linha-resumo">
+            <span>Frete</span>
+            <strong id="valorFrete">
+                R$ 0,00
+            </strong>
+        </div>
+
+        <hr>
+
+        <div class="linha-resumo total-final">
+            <span>Total</span>
+            <strong id="total">
+                R$ 0,00
+            </strong>
+        </div>
+
+    </div>
+
+
+    <!-- FRETE -->
+
+    <div class="frete">
+
+        <div>
+
+            <label>
+                Calcular frete
+            </label>
+
+            <div class="campo-frete">
+
+                <input
+                    type="text"
+                    id="cep"
+                    maxlength="8"
+                    placeholder="Digite seu CEP"
+                >
+
+                <button onclick="calcularFrete()">
+                    Calcular
+                </button>
+
+            </div>
+
+            <p id="resultadoFrete"></p>
+
+        </div>
+
+
+        <button
+            class="botao"
+            onclick="abrirPagamento()"
+        >
+            Ir para pagamento
+        </button>
+
+    </div>
+
+</section>
