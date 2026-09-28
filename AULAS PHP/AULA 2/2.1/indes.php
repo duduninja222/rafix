@@ -1,11 +1,16 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $quantidade = $_POST["quantidade"];
-    $valor = $_POST["valor"];
+$quantidade = $_POST ["quantidade"];
 
-    $total = $quantidade * $valor;
+$preco = $_POST ["preco"];
 
-    echo "<h2>Total: R$ " . number_format($total, 2, ',', '.') . "</h2>";
-}
+$total = $quantidade * $preco;
+
+echo "<h1>Resultado da Compra</h1>";
+
+echo "Quantidade de produtos: " . $quantidade . "<br>";
+
+echo "Preco por item: R$ " . number_format($preco, 2, ',', '.') . "<br>";
+
+echo "Total: R$ " . number_format($total, 2, ',', '.');
 ?>
