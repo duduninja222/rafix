@@ -7,6 +7,63 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <Header>
+        <h1>Cadastro para larpers</h1>
+        <p> 
+            <nav>
+                <a href="./index.html">Menu</a>
+                <a href="./cadastro.html">Matricula</a>
+                <a href="./planos.html">Planos</a>
+            </nav>
+        </p>
+    </header>
+
+    <Form Action="./index.php" method="POST">
+
+        <div class="grade2">
+
+            <div>
+                <Label>Nome:</Label>
+                <Input name="nome" type="text" id="nome" placeholder="Larper da Silva" required>
+            </div>
+
+            <br><br>
+
+            <div>
+                <Label>Email:</Label>
+                <Input name="email" type="email" id="email" placeholder="Larperdasilva@gmail.com" required>
+            </div>
+
+            <br><br>
+
+            <div>
+                <Label>Telefone</Label>
+                <Input name="tel" type="tel" id="tel" placeholder="(xx) xxxxx-xxxx" required>
+            </div>
+
+            <br><br>
+
+            <div>
+                <Label>Idade</Label>
+                <Input name="idd" type="number" id="idd" min="0" required>
+            </div>
+
+            <br><br>
+
+            <div>
+                <label>Data de Matrícula</label>
+                <Input name="dtm" type="date" id="dtm" required>
+            </div>
+
+            <br><br>
+
+        
+    </div>
+
+    <button id="btn" type="submit">Começar o Larp</button>
+    </form>
+
     
+
 </body>
 </html>
