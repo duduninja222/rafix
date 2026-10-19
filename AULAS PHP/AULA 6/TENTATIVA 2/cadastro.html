@@ -27,40 +27,69 @@
                 <Input name="nome" type="text" id="nome" placeholder="Larper da Silva" required>
             </div>
 
-            <br><br>
+            <br>
 
             <div>
                 <Label>Email:</Label>
                 <Input name="email" type="email" id="email" placeholder="Larperdasilva@gmail.com" required>
             </div>
 
-            <br><br>
+            <br>
 
             <div>
                 <Label>Telefone</Label>
                 <Input name="tel" type="tel" id="tel" placeholder="(xx) xxxxx-xxxx" required>
             </div>
 
-            <br><br>
+            <br>
 
             <div>
                 <Label>Idade</Label>
                 <Input name="idd" type="number" id="idd" min="0" required>
             </div>
 
-            <br><br>
+            <br>
 
             <div>
                 <label>Data de Matrícula</label>
                 <Input name="dtm" type="date" id="dtm" required>
             </div>
 
-            <br><br>
+            <br>
 
+            <div>
+                <label>Plano</label>
+                <select name="planoCAD" id="planoCAD" required>
+
+                    <option value="selecione">Selecione um larp</option>
+                    <option value ="basico">Larp Básico - 89,90</option>
+                    <option value="plus">Larp Plus - 149,90</option>
+                    <option value="premium"> Pro Larp master - 199,90</option>
+
+                </select>
+            </div>
+
+            <br>
+
+            <div>
+                <label>Pagamento</label>
+                <select name="pagamento" id="pagamento" required>
+                    
+                    <option value="selecione">Selecione uma opção</option>
+                    <option value="pix">PIX</option>
+                    <option value="Cartão de debito">Cartão de débito</option>
+                    <option value="Cartão de credito">Cartão de crédito</option>
+                    <option value="dinheiro">Dinheiro</option>
+
+                </select>
+            </div>
+
+            <br>
+
+        </div>
+
+        <button id="bttn" type="submit">Começar o Larp</button>
         
-    </div>
-
-    <button id="btn" type="submit">Começar o Larp</button>
     </form>
 
     
