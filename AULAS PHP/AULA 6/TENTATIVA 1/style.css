@@ -33,7 +33,11 @@ h2{font-size:1.9rem;margin:0 0 6px}
 
 .btn.sec{background:var(--azul)}
 
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px 24px}
+.grid2{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:16px 24px
+}
 
 label{display:block;font-size:.8rem;margin-bottom:5px}
 
