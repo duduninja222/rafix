@@ -37,7 +37,7 @@ header h1{
 
 nav a{
     color:#e2d3d3;
-    text-decoration:line-through;
+    text-decoration:none;
     font-size: 1rem;
     margin-left:15px;
 }
@@ -111,5 +111,6 @@ h2{
 div a{
     text-decoration:none;
 }
+
 
 
