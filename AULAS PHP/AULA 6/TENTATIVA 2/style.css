@@ -112,5 +112,74 @@ div a{
     text-decoration:none;
 }
 
+label{
+    display:block;
+    font-size:0.8rem;
+    margin-bottom:5px
+}
 
+input,select{
+    width:100%;
+    padding:15px;
+    border:2px solid var(--borda);
+    border-radius:3px;
+    font-size: 1rem;
+}
 
+form .bttn{
+    outline:3px solid var(--laranja)
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:#7eaef77c
+}
+
+td,th{
+    padding:10px 8px;
+    border-bottom:1px solid var(--borda);
+    text-align:center
+}
+
+td:last-child{
+    font-weight:bold
+}
+
+.msg{
+    padding: 16 20px;
+    border-radius:10px;
+    font-weight:bold;
+    margin-bottom:24px
+}
+
+.msg.ok{
+    background:var(--ok);
+    color:(--okt)
+}
+
+.msg.error{
+    background:var(--erro);
+    color:(var(--errot))
+}
+
+ul.erros{
+    margin:0 0 10px;
+    padding-left:20px;
+    color:var(--errot)
+}
+
+small{
+    color:#6b7690;
+}
+
+@media
+(max-width:600px){
+    .grade2{
+        grid-template-columns:1fr
+    }
+    header{
+        flex-direction:column;
+        gap:10px
+    }
+}
